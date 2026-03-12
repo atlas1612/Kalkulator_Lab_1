@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Kalkulejtor.Views.MainWindow"
+        Title="Kalkulator"
+        Width="500"
+        Height="400">
+
+    <StackPanel Margin="20" Spacing="10">
+
+        <TextBlock Text="Kalkulatorek Prosty"
+                   FontSize="30"
+                   HorizontalAlignment="Center"/>
+
+        <TextBox HorizontalAlignment="Center" Name="Liczba1" Watermark="Pierwsza liczba"/>
+        <TextBox HorizontalAlignment="Center" Name="Liczba2" Watermark="Druga liczba"/>
+
+        <Button Content="Dodaj" Click="Dodaj_Click" HorizontalAlignment="Center"/>
+        <Button Content="Odejmij" Click="Odejmij_Click" HorizontalAlignment="Center" />
+        <Button Content="Pomnóż" Click="Pomnoz_Click" HorizontalAlignment="Center" />
+        <Button Content="Podziel" Click="Podziel_Click" HorizontalAlignment="Center" />
+
+        <TextBlock Name="WynikTekst"
+                   FontSize="20"
+                   HorizontalAlignment="Center"/>
+
+    </StackPanel>
+
+</Window>
